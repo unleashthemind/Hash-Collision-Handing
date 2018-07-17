@@ -81,7 +81,7 @@ T ChainHashTable<T>::remove(const T &data, bool &found){
 		if(*j == data){
 			found = true;
 			m_table[pos].erase(j);
-      m_size--;
+      			m_size--;
 			return data;
 		}
 	}
