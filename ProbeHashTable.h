@@ -37,15 +37,15 @@ public:
       T m_data;
    };
    friend std::ostream &operator<<(std::ostream&, const HashTableEntry& obj){
-		if(obj.m_flag == DELETED){
-         std::cout << "DELETED" << std::endl;
-      } 
-      else if (obj.m_flag == EMPTY){
-         std::cout << "EMPTY" << std::endl;			
-      } 
-      else {
-         std::cout << obj.m_data << " (" << obj.m_orig_pos << ")" << std::endl;
-      }
+   	if(obj.m_flag == DELETED){
+        	std::cout << "DELETED" << std::endl;
+        } 
+      	else if (obj.m_flag == EMPTY){
+        	std::cout << "EMPTY" << std::endl;			
+      	} 
+      	else {
+        	std::cout << obj.m_data << " (" << obj.m_orig_pos << ")" << std::endl;
+      	}
    }
 	
 private:
