@@ -17,7 +17,6 @@ template <typename T>
 class ProbeHashTable : public HashTable<T> { 
 public:
    ProbeHashTable(unsigned int (*hashFunc)(const T&), int n = 101);
-   //unsigned int (*hashFunc)(const T &data);
    virtual ~ProbeHashTable();
    ProbeHashTable (ProbeHashTable& other);
    const ProbeHashTable& operator= (ProbeHashTable& rhs);
@@ -30,8 +29,8 @@ public:
    class HashTableEntry{
    public:
       HashTableEntry(){
-         m_flag = EMPTY;
-	       m_orig_pos = 0;
+          m_flag = EMPTY;
+	  m_orig_pos = 0;
       }
 		  unsigned int m_orig_pos;
       int m_flag;
