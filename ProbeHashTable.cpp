@@ -111,7 +111,7 @@ void ProbeHashTable<T>::dump(){
 		std::cout << "[" << i << "]: ";
 		std::cout << m_table[i];
 	}
-   std::cout << "Total items: " << m_size << std::endl;
+   	std::cout << "Total items: " << m_size << std::endl;
 }
 
 template <typename T>
