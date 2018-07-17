@@ -20,7 +20,7 @@ public:
 	virtual bool find(const T &data);
 	virtual T remove(const T &data, bool &found);
 	virtual void dump();
-   virtual int at(int index, std::vector<T> &contents);
+   	virtual int at(int index, std::vector<T> &contents);
 private:
 	std::list<T>* m_table;
 	int m_size;
